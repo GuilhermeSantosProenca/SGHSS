@@ -43,7 +43,7 @@ Teleconsulta/
 
 👉 Login/index.html
 
-(Recomenda-se abrir utilizando o Visual Studio Code com Live Server)
+(Recomenda-se abrir com o navegador ou utilizando o Visual Studio Code com Live Server)
 
 ---
 
