@@ -38,10 +38,10 @@ Teleconsulta/
 
 1. Baixar ou clonar o repositório
 2. Abrir a pasta do projeto
-3. Executar o arquivo:
-4. Criar uma conta
-5. Fazer login
-6. Utilizar o sistema normalmente
+3. Executar o arquivo: Login/index.html
+5. Criar uma conta
+6. Fazer login
+7. Utilizar o sistema normalmente
 
 ---
 
