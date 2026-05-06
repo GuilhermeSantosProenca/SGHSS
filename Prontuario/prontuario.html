@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Prontuário</title>
+
+<!-- css da tela de prontuário -->
+<link rel="stylesheet" href="prontuario.css">
+</head>
+<body>
+
+<!-- barra superior -->
+<div class="topbar">
+
+    <!-- botão voltar -->
+    <button onclick="voltar()">← Voltar</button>
+
+    <!-- título da tela -->
+    <h2>Prontuário</h2>
+</div>
+
+<!-- layout principal -->
+<div class="container">
+
+    <!-- lista de pacientes -->
+    <div class="lista">
+        <h3>Pacientes</h3>
+
+        <!-- lista preenchida via javascript -->
+        <div id="listaPacientes"></div>
+    </div>
+
+    <!-- área de detalhes do prontuário -->
+    <div class="detalhes">
+        <h3>Prontuário</h3>
+
+        <!-- conteúdo dinâmico -->
+        <div id="conteudo">
+            Selecione um paciente
+        </div>
+    </div>
+
+</div>
+
+<!-- script da tela -->
+<script src="prontuario.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <!-- css da tela de login -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- caixa central -->
+<div class="login-container">
+
+    <!-- formulário de login -->
+    <form id="loginForm">
+
+        <!-- título do sistema -->
+        <h1>VIDA PLUS</h1>
+        <p>Sistema de Gestão Hospitalar</p>
+
+        <!-- campo usuário -->
+        <div class="input-group">
+            <label>Usuário:</label>
+            <input type="text" id="user" required>
+        </div>
+
+        <!-- campo senha -->
+        <div class="input-group">
+            <label>Senha:</label>
+            <input type="password" id="pass" required>
+        </div>
+
+        <!-- botão de login -->
+        <button type="submit">Acessar Sistema</button>
+
+        <!-- texto para cadastro -->
+        <p class="cadastro-texto">Ainda não tem conta?</p>
+
+        <!-- botão criar conta -->
+        <button type="button" class="btn-secundario" onclick="irCadastro()">Criar Conta</button>
+
+        <!-- mensagem de erro -->
+        <p id="msg-erro" class="error"></p>
+
+    </form>
+</div>
+
+<!-- script do login -->
+<script src="index.js"></script>
+
+</body>
+</html>

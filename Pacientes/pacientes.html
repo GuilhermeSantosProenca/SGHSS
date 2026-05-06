@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pacientes</title>
+
+<!-- css da tela de pacientes -->
+<link rel="stylesheet" href="pacientes.css">
+</head>
+<body class="cadastro-body">
+
+<!-- barra superior -->
+<div class="topbar">
+    <h2>Pacientes</h2>
+    <button onclick="voltar()">Voltar</button>
+</div>
+
+<!-- container principal -->
+<div class="cadastro-container">
+
+    <!-- abas da tela -->
+    <div class="abas">
+        <button onclick="trocarAba('cadastro')">Cadastrar</button>
+        <button onclick="trocarAba('lista')">Lista de Pacientes</button>
+    </div>
+
+    <!-- aba de cadastro -->
+    <div id="cadastro" class="aba">
+
+        <!-- bloco dos dados pessoais -->
+        <div class="bloco">
+            <h3>Dados Pessoais</h3>
+
+            <!-- campos do formulário -->
+            <div class="grid-form">
+                <input id="nome" placeholder="Nome completo *" required>
+                <input id="cpf" placeholder="CPF *" required>
+                <input id="nascimento" type="date" required>
+
+                <select id="sexo" required>
+                    <option value="">Sexo *</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+
+                <input id="telefone" placeholder="Telefone *" required>
+                <input id="email" placeholder="E-mail *" required>
+                <input id="endereco" placeholder="Endereço *" required>
+
+                <select id="convenio" required>
+                    <option value="">Convênio *</option>
+                    <option>SUS</option>
+                    <option>Unimed</option>
+                    <option>Particular</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- aviso de obrigatoriedade -->
+        <p class="aviso-obrigatorio">* Campos obrigatórios</p>
+
+        <!-- botão salvar -->
+        <button class="btn-salvar" onclick="salvarPaciente()">Salvar Paciente</button>
+    </div>
+
+    <!-- aba da lista de pacientes -->
+    <div id="lista" class="aba" style="display:none;">
+
+        <!-- campo de pesquisa -->
+        <input 
+            type="text" 
+            id="busca" 
+            placeholder="Pesquisar por nome ou CPF..."
+            onkeyup="filtrar()"
+            class="input-busca"
+        >
+
+        <!-- lista preenchida pelo javascript -->
+        <div id="listaPacientes"></div>
+    </div>
+
+</div>
+
+<!-- script da tela -->
+<script src="pacientes.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<!-- css da tela principal -->
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="dashboard">
+
+<!-- TOPO -->
+<header class="topbar">
+
+    <!-- nome do sistema -->
+    <h2>VIDA PLUS</h2>
+
+    <!-- área do usuário -->
+    <div class="user-area">
+
+        <!-- botão que abre o menu -->
+        <div class="user-menu" onclick="toggleUserMenu()">
+            <span class="user-icon">👤</span>
+            <span id="usuario"></span>
+            <span class="seta">▾</span>
+        </div>
+
+        <!-- menu dropdown -->
+        <div id="dropdownUser" class="dropdown-user">
+
+            <!-- informações do sistema -->
+            <p class="info-sistema">Estabelecimento: VidaPlus</p>
+            <p class="info-sistema">Perfil: <span id="perfilTexto"></span></p>
+
+            <hr>
+
+            <!-- ações do usuário -->
+            <button onclick="mudarPerfil()">Trocar perfil</button>
+            <button onclick="logout()" class="btn-sair">Sair</button>
+        </div>
+    </div>
+
+</header>
+
+<!-- BUSCA -->
+<div class="search-box">
+
+    <!-- campo para filtrar funções -->
+    <input 
+        type="text" 
+        id="busca" 
+        placeholder="Buscar função..." 
+        onkeyup="filtrar()"
+    >
+
+</div>
+
+<!-- MENU PRINCIPAL -->
+<div class="menu" id="menu">
+
+    <!-- pacientes -->
+    <div class="card" onclick="ir('../Pacientes/pacientes.html')">
+        <div class="icon">👥</div>
+        <p>Pacientes</p>
+    </div>
+
+    <!-- agendamento -->
+    <div class="card" onclick="ir('../Agendamento/agendamento.html')">
+        <div class="icon">📅</div>
+        <p>Agendamento</p>
+    </div>
+
+    <!-- prontuário -->
+    <div class="card" onclick="ir('../Prontuario/prontuario.html')">
+        <div class="icon">📋</div>
+        <p>Prontuário</p>
+    </div>
+
+    <!-- teleconsulta -->
+    <div class="card" onclick="ir('../Teleconsulta/teleconsulta.html')">
+        <div class="icon">📹</div>
+        <p>Teleconsulta</p>
+    </div>
+
+</div>
+
+<!-- SELEÇÃO DE PERFIL -->
+<div id="tela-perfil" class="overlay">
+
+    <div class="box">
+
+        <h2>Selecione seu perfil</h2>
+
+        <!-- define perfil médico -->
+        <button onclick="setPerfil('medico')">Médico</button>
+
+        <!-- define perfil administrativo -->
+        <button onclick="setPerfil('adm')">Administrativo</button>
+
+    </div>
+
+</div>
+
+<!-- script do dashboard -->
+<script src="dashboard.js"></script>
+
+</body>
+</html>

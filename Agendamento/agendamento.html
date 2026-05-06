@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Agendamento</title>
+
+<!-- importa o css da tela -->
+<link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+
+<!-- barra de cima com título e botão voltar -->
+<div class="topbar">
+    <h2>Agendamento</h2>
+    <button onclick="voltar()">Voltar</button>
+</div>
+
+<div class="container">
+
+    <!-- lado esquerdo com filtros -->
+    <div class="filtro">
+        <h3>Filtros</h3>
+
+        <!-- seleção de médico -->
+        <label>Médico</label>
+        <select id="medico">
+            <option>Dr. João</option>
+            <option>Dra. Maria</option>
+            <option>Dr. Carlos</option>
+        </select>
+
+        <!-- escolha da data -->
+        <label>Data</label>
+        <input type="date" id="data">
+
+        <!-- botão que recarrega a agenda -->
+        <button onclick="carregarAgenda()">Filtrar</button>
+    </div>
+
+    <!-- parte principal com a agenda -->
+    <div class="agenda">
+
+        <!-- tabela com horários -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Paciente</th>
+                    <th></th> <!-- aqui ficam os botões -->
+                </tr>
+            </thead>
+
+            <!-- aqui o JS vai preencher os horários -->
+            <tbody id="tabela"></tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<!-- modal para escolher paciente -->
+<div id="modal" class="modal">
+    <div class="modal-box">
+
+        <h3>Selecionar Paciente</h3>
+
+        <!-- lista de pacientes carregada pelo JS -->
+        <div id="listaPacientes"></div>
+
+        <!-- fecha o modal -->
+        <button onclick="fecharModal()">Fechar</button>
+    </div>
+</div>
+
+<!-- script com a lógica da agenda -->
+<script src="agendamento.js"></script>
+
+</body>
+</html>

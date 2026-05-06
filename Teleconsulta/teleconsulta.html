@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Teleconsulta</title>
+
+<!-- css da tela de teleconsulta -->
+<link rel="stylesheet" href="teleconsulta.css">
+</head>
+<body>
+
+<!-- barra superior -->
+<div class="topbar">
+
+    <!-- botão voltar -->
+    <button onclick="voltar()">← Voltar</button>
+
+    <!-- título -->
+    <h2>Teleconsulta</h2>
+</div>
+
+<!-- layout principal -->
+<div class="container">
+
+    <!-- lista de consultas do dia -->
+    <div class="box lista">
+        <h3>Consultas do Dia</h3>
+
+        <!-- preenchido via javascript -->
+        <div id="listaConsultas"></div>
+    </div>
+
+    <!-- área de atendimento -->
+    <div class="box detalhes">
+        <h3>Atendimento</h3>
+
+        <!-- conteúdo dinâmico -->
+        <div id="areaConsulta">
+            Selecione uma consulta
+        </div>
+    </div>
+
+</div>
+
+<!-- script da tela -->
+<script src="teleconsulta.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+/* barra superior da tela */
+.topbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* área principal, separando filtro e agenda */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* caixa dos filtros */
+.filtro {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* deixa os textos dos filtros um embaixo do outro */
+.filtro label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* campos de data e seleção do médico */
+.filtro input,
+.filtro select {
+    width: 100%;
+    padding: 8px;
+}
+
+/* botão de filtrar */
+.filtro button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* área da tabela de horários */
+.agenda {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* tabela da agenda */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* células da tabela */
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* mostra quando o horário já está ocupado */
+.ocupado {
+    color: red;
+    font-weight: bold;
+}
+
+/* fundo escuro do modal de seleção de paciente */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* caixa branca do modal */
+.modal-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* paciente listado dentro do modal */
+.item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* destaque ao passar o mouse no paciente */
+.item:hover {
+    background: #ecf0f1;
+}

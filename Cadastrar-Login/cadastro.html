@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro</title>
+
+<!-- css da tela -->
+<link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+
+<!-- caixa central -->
+<div class="login-container">
+
+    <!-- título da tela -->
+    <h1>Criar Conta</h1>
+    <p>Sistema de Gestão Hospitalar</p>
+
+    <!-- formulário de cadastro -->
+    <form id="formCadastro">
+
+        <!-- campo usuário -->
+        <div class="input-group">
+            <input type="text" id="novoUser" placeholder="Usuário" required>
+        </div>
+
+        <!-- campo senha -->
+        <div class="input-group">
+            <input type="password" id="novaSenha" placeholder="Senha" required>
+        </div>
+
+        <!-- botão cadastrar -->
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+    <!-- mensagem de erro ou sucesso -->
+    <p id="msg"></p>
+
+    <!-- botão voltar -->
+    <button class="btn-secundario" onclick="voltar()">Voltar</button>
+
+</div>
+
+<!-- script da tela -->
+<script src="cadastro.js"></script>
+
+</body>
+</html>

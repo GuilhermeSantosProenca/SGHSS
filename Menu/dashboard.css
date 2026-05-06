@@ -1,0 +1,210 @@
+/* configura o fundo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* barra superior */
+.topbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* área do usuário (nome + menu) */
+.user-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* botão padrão */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+/* efeito hover dos botões */
+button:hover {
+    background: #32557c;
+}
+
+/* área de busca */
+.search-box {
+    padding: 20px;
+    text-align: center;
+}
+
+/* input da busca */
+.search-box input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* grid dos cards */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* card das funcionalidades */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* efeito hover do card */
+.card:hover {
+    transform: translateY(-5px);
+    background: #3498db;
+    color: white;
+}
+
+/* ícone do card */
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* tela escura de seleção de perfil */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* caixa do modal de perfil */
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* botões dentro do modal */
+.box button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* botão de perfil */
+.btn-perfil {
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* hover do botão de perfil */
+.btn-perfil:hover {
+    background: #dfe6e9;
+}
+
+/* menu do usuário (clicável) */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+/* hover do menu do usuário */
+.user-menu:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ícone do usuário */
+.user-icon {
+    font-size: 18px;
+}
+
+/* seta do menu */
+.seta {
+    font-size: 12px;
+}
+
+/* dropdown do usuário */
+.dropdown-user {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 240px;
+    background: white;
+    color: #2c3e50;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1000;
+}
+
+/* textos dentro do dropdown */
+.dropdown-user p {
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+/* info do sistema */
+.info-sistema {
+    color: #7f8c8d;
+}
+
+/* linha divisória */
+.dropdown-user hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* botões dentro do dropdown */
+.dropdown-user button {
+    width: 100%;
+    background: transparent;
+    color: #2c3e50;
+    text-align: left;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* hover dos botões do dropdown */
+.dropdown-user button:hover {
+    background: #ecf0f1;
+}
+
+/* botão sair */
+.dropdown-user .btn-sair {
+    color: #e74c3c;
+}
+
+/* hover do sair */
+.dropdown-user .btn-sair:hover {
+    background: #fdecea;
+}

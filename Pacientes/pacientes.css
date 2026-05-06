@@ -1,0 +1,87 @@
+/* configura o fundo geral */
+body {
+    font-family: Arial;
+    background: #f4f6f9;
+    margin: 0;
+}
+
+/* barra superior */
+.topbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* container principal da tela */
+.cadastro-container {
+    padding: 20px;
+}
+
+/* área das abas (cadastro / lista) */
+.abas {
+    margin-bottom: 20px;
+}
+
+/* botões das abas */
+.abas button {
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* bloco de informações (dados pessoais) */
+.bloco {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* organiza os campos em grid */
+.grid-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+/* campos de entrada */
+input, 
+select {
+    padding: 10px;
+    width: 100%;
+}
+
+/* botão de salvar paciente */
+.btn-salvar {
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* campo de busca da lista */
+.input-busca {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* card de cada paciente */
+.card-paciente {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* aviso de campos obrigatórios */
+.aviso-obrigatorio {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+}

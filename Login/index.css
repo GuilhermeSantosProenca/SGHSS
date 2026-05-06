@@ -1,0 +1,95 @@
+/* configura o fundo da tela */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* caixa central do login */
+.login-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* título principal */
+h1 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* texto padrão */
+p {
+    color: #666;
+}
+
+/* grupo dos inputs */
+.input-group {
+    text-align: left;
+    margin-top: 15px;
+}
+
+/* label dos campos */
+.input-group label {
+    font-size: 14px;
+}
+
+/* campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* botão principal */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* efeito ao passar o mouse */
+button:hover {
+    background: #2980b9;
+}
+
+/* botão secundário (criar conta) */
+.btn-secundario {
+    background: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+/* efeito hover do secundário */
+.btn-secundario:hover {
+    background: #3498db;
+    color: white;
+}
+
+/* texto de cadastro */
+.cadastro-texto {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* mensagem de erro */
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 10px;
+}
