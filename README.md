@@ -51,7 +51,6 @@ Teleconsulta/
 
 - Os dados são armazenados no navegador utilizando LocalStorage
 - Não há integração com banco de dados externo
-- O sistema funciona apenas localmente
 - Cada paciente é identificado pelo CPF
 - As consultas são organizadas por médico, data e horário
 
