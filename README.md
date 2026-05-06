@@ -36,12 +36,14 @@ Teleconsulta/
 
 ## ▶️ Como executar o sistema
 
-1. Baixar ou clonar o repositório
-2. Abrir a pasta do projeto
-3. Executar o arquivo: Login/index.html
-5. Criar uma conta
-6. Fazer login
-7. Utilizar o sistema normalmente
+1. Baixe o projeto (Download ZIP)
+2. Extraia os arquivos
+3. Abra a pasta do projeto
+4. Execute o arquivo:
+
+👉 Login/index.html
+
+(Recomenda-se abrir utilizando o Visual Studio Code com Live Server)
 
 ---
 
