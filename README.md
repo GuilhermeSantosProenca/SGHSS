@@ -62,9 +62,10 @@ O sistema foi desenvolvido considerando boas práticas de usabilidade, com inter
 
 ---
 
-## 🔗 Repositório
+## 🔗 Links
 
-Link: https://github.com/GuilhermeSantosProenca/SGHSS
+Repositório: https://github.com/GuilhermeSantosProenca/SGHSS
+Site: https://trabsghss.netlify.app/login/index.html
 
 
 ---
